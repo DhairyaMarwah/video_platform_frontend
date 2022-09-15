@@ -27,7 +27,12 @@ const Clients = ({history}) => {
 		<>
 			<Header>
 				<AnimatedLink to="/us">US</AnimatedLink>
-				<HeaderItem>CLIENTS</HeaderItem>
+				<HeaderItem>
+				<span className='color-work'>
+
+					CLIENTS
+				</span>
+					</HeaderItem>
 				<BackArrow to="/us" />
 			</Header>
 			<BodyWrapper>

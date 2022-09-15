@@ -11,8 +11,133 @@ import BackArrow from '../../components/backarrow/BackArrow';
 import TextBox from '../../components/text-box/text-box';
 import AnimatedLink from '../../components/animated-link/AnimatedLink';
 // import useData from '../../data/useData';
-
+const work= [
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": 2,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "2",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "2",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": 2,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": 2,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "2",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "2",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+    {
+        "title": "Social",
+        "slug": "social",
+        "columns": "1",
+        "columns_mobile": null,
+        "fixed_titles": "0",
+        "disable_click": "0",
+        "rows": "1",
+        "rows_mobile": null,
+        "image": null
+    },
+]
 const Work = ({history}) => {
+    if(window.location.pathname === '/work'){
+        document.body.style.backgroundColor = "#EEE2CD"
+    }
 
 	// const {work, laoding} = useData();
 
@@ -26,14 +151,22 @@ const Work = ({history}) => {
 		<>
 			<Header>
 				<AnimatedLink to="/us">US</AnimatedLink>
-				<HeaderItem>WORK</HeaderItem>
+				<HeaderItem>
+                    <span className='color-work'>
+
+                    WORK
+                    </span>
+                    </HeaderItem>
 				<BackArrow to="/us" />
 			</Header>
 			<BodyWrapper>
 				<Grid>
-					{/* {work && work.map((item, index) =>
-						<GridItem noScale index={index} key={item.slug} link={`/work/${item.slug}`} title={item.title} cols={item.columns} rows={item.rows} image={item.image} />
-					)} */}
+					{work && work.map((item, index) =>
+						<GridItem noScale index={index} key={item.slug}
+                        //  link={`/work/${item.slug}`}
+                         link={'/myworks'}
+                          title={item.title} cols={item.columns} rows={item.rows} image={item.image} />
+					)}
 				</Grid>
 				
 			</BodyWrapper>

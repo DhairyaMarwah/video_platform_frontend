@@ -125,10 +125,10 @@ console.log(onBack);
 
 			<Address>
 				<AddressCopy>
-					<AddressText>30 Market Place</AddressText>
-					<AddressText>London</AddressText>
-					<AddressText>W1W 8AP</AddressText>
-					<AddressText extraSpace>+44 207 637 0079</AddressText>
+					<AddressText>12 Avenue Street</AddressText>
+					<AddressText>Mexico</AddressText>
+					<AddressText>Lorem Ipsum</AddressText>
+					<AddressText extraSpace>+12 3456789</AddressText>
 				</AddressCopy>
 				
 				{/* <Social>

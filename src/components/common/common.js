@@ -6,7 +6,7 @@ import breakpoint from 'styled-components-breakpoint';
 
 export const BodyWrapper = styled.div`
 	width: 100vw;
-	margin: 0 auto 10vw auto;
+	margin: 0 auto 0vw auto;
 
 	${breakpoint('tablet')`
 		width: 80vw;
@@ -26,7 +26,8 @@ export const Header = styled.div`
 	${breakpoint('tablet')`
 		width: 80vw;
 		height: 10vw;
-		margin: 15px auto 0 auto;
+		margin: 15px auto 10px auto;
+		margin-top: 0px;
 		align-items: flex-end;
 		min-height: 170px;
 	`}

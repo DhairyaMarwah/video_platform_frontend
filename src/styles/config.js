@@ -2,10 +2,10 @@ export default class Config {
 
 	static BREAKPOINT = 800;
 
-	static DARKER = '#272727';
-	static DARK = '#3d3d3d';
+	static DARKER = '#629080';
+	static DARK = '#629080';
 	static TEXT = '#dddddd';
-	static GREY = '#353535';
+	static GREY = '#629080';
 	static LINE = '#525252';
 
 	static HEADING_SIZE = '46px';
